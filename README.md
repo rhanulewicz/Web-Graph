@@ -15,8 +15,6 @@ The various operations that can be performed on the graph are Prune, Path, and C
 **Prune**
 
 ```
-#!python
-
 python WebGraph.py -prune nodeFilename edgeFilename outputFilename k
 ```
 Returns a graph containing only sites with *k* or more sites linking to it. The returned graph can contain sites with fewer than k incoming edges as long as they had k or more links in the original graph.
@@ -30,8 +28,6 @@ Creates a file with the name contained in the *outputFilename* parameter with th
 **Path**
 
 ```
-#!python
-
 python WebGraph.py -path nodeFilename edgeFilename outputFilename startURL destinationURL
 ```
 Writes the edges into the output file of the shortest path from startURL to destinationURL. Ties in distance between multiple paths are broken arbitrarily. 
@@ -43,8 +39,6 @@ Note that we are working with pay level domains so this is not the minimum numbe
 **Cover**
 
 ```
-#!python
-
 python WebGraph.py -cover nodeFilename edgeFilename outputFilename k url
 ```
 Given a domain name, removes it from existence! In addition to removing the given url from the web graph, the program also removes any site linking to the domain with distance k or less.
