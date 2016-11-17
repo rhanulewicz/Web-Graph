@@ -1,6 +1,6 @@
 ### Project Description ###
 
-This is a program that builds a graph out of a large sampling of data and performs various operations on that graph as commanded by the user. These functions will work on any arbitrary graph, but this project and all testing done on it is oriented toward web graphs. A large sampling of data is already provided in the 'data' folder. The data provided is a small sub-graph of the full web to allow faster development and testing, though the graph is still fairly large.
+This is a program that builds a graph out of a large sampling of data and performs various operations on that graph as commanded by the user. These functions will work on any arbitrary graph, but this project and all testing done on it is oriented toward web graphs. A large sampling of data is already provided in the data.zip file. This program cannot read from zip files so you are going to need to extract it yourself (thank Github's 100mb file size limit). The data provided is a small sub-graph of the full web to allow faster development and testing, though the graph is still fairly large.
 
 The nodes file gives the mapping of url to id ("buffalo.edu\t6136198") and the edges file gives every edge by the node id's in the order of source node then destination node ("15328636\t6136198"). This edge means that site "15328636" contains a link to site "6136198". 
 
